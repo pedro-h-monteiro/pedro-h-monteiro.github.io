@@ -988,10 +988,6 @@ footer p {
         border-radius: 2px;
     }
 
-    iframe {
-        display: none;
-    }
-
     .banner-wrapper {
         display: block;
         margin-left: auto;
