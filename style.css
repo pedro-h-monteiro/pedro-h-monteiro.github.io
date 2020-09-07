@@ -109,6 +109,9 @@ body::-webkit-scrollbar {
     color: rgba(255, 255, 255, 1);
     margin-top: -65px;
     animation: animated-text 1s steps(17, end) 1s 1 normal both, animated-cursor 900ms steps(17, end) infinite;
+    display: block;
+    text-align: center;
+    position: relative;
 }
 
 /* text animation */
@@ -619,6 +622,9 @@ footer > p {
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
         animation: animated-text 1s steps(17, end) 1s 1 normal both, animated-cursor 900ms steps(17, end) infinite;
+        display: block;
+        text-align: center;
+        position: relative;
     }
     
     /* text animation */
@@ -1116,6 +1122,9 @@ footer > p {
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
         animation: animated-text 1s steps(17, end) 1s 1 normal both, animated-cursor 900ms steps(17, end) infinite;
+        display: block;
+        text-align: center;
+        position: relative;
     }
     
     /* text animation */
@@ -1622,6 +1631,9 @@ footer > p {
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
         animation: animated-text 1s steps(17, end) 1s 1 normal both, animated-cursor 900ms steps(17, end) infinite;
+        display: block;
+        text-align: center;
+        position: relative;
     }
     
     /* text animation */
