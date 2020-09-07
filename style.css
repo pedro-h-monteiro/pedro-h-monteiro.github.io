@@ -100,6 +100,7 @@ body::-webkit-scrollbar {
 }
 
 #wrapper > p {
+    text-align: center;
     border-right: solid 40px rgba(255, 255, 255, 1);
     white-space: nowrap;
     overflow: hidden;
@@ -609,6 +610,7 @@ footer > p {
     }
     
     #wrapper > p {
+        text-align: center;
         border-right: solid 20px rgba(255, 255, 255, 1);
         white-space: nowrap;
         overflow: hidden;
@@ -1105,6 +1107,7 @@ footer > p {
     }
     
     #wrapper > p {
+        text-align: center;
         border-right: solid 20px rgba(255, 255, 255, 1);
         white-space: nowrap;
         overflow: hidden;
@@ -1610,6 +1613,7 @@ footer > p {
     }
     
     #wrapper > p {
+        text-align: center;
         border-right: solid 20px rgba(255, 255, 255, 1);
         white-space: nowrap;
         overflow: hidden;
