@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nirvana - Ultimate Quiz</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="shopScript.js"></script>
+    <link rel="icon" href="images/icon1.png" type="image/x-icon"/>
+    <!--Estilos locais Internos-->
+    <style>
+    main  form > h1 {
+        margin-top: 0px;
+    }
+    </style>
+</head>
+<body>
+    <a name="top"></a>
+    <div class="top-bg">
+        <header>
+            <p class="banner-wrapper"><a href="index.html"><img src="images/nirvana-logo.png" alt="Nirvana Logo" class="banner"></a></p>
+            <p class="banner-tittle">A brief history</p>
+        </header>
+    </div>
+    <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer" >
+    <label for="burguer-wrap" class="hamburguer">
+        <p>&#9776;</p>
+    </label>
+
+    <nav>
+        <ul>
+            <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer" >
+            <label for="burguer-wrap" class="hamburguer">
+                <p>&#9932;</p>
+            </label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Dave Grohl</a></li>
+            <li><a href="page2.html">Krist Novoselic</a></li>
+            <li><a href="page3.html">Kurt Cobain</a></li>
+            <li><a href="page4.html">The Band</a></li>
+            <li><a href="page5.html">The Final Days</a></li>
+            <li><a href="page7.html" >Discography</a></li>
+            <li><a href="page6.html" class="active">Ultimate Quiz</a></li>
+            <li class="optional"><a href="page8.html">Shop</a></li>
+            <li>
+                <div class="shop-dropdown">
+                    <button onclick="dropShop()" class="dropbtn">Shop</button>
+                    <div id="shopDropdown" class="dropdownContent">
+                        <a href="page8-shirts.html">Shirts</a>
+                        <a href="page8-hoodies.html">Hoodies</a>
+                        <a href="page8-accessories.html">Accessories</a>
+                        <a href="page8-vinyls.html">Vinyls</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <form class="nirvana-quiz" action="mailto:" method="post">
+            <h1>A Nirvana Quiz</h1>
+            <!--Estilos Inline-->
+            <hr style = "background-color: #999;">
+
+            <img src="images/nirvana-q.jpg" alt="Nirvana" class="quiz-img">
+            
+            <a href="page6.html#gets"><h2 id="getstarted">Get Started</h2></a>
+            <a name="gets"></a>
+
+            <section>
+                <p class="tittle">
+                    <b>1 - Before Dave Grohl, how many drummers were there in the band?</b>
+                </p>
+                <p><label><input type="radio" name="1q" value="1a" />Two</label></p>
+                <p><label><input type="radio" name="1q" value="2a" />Four</label></p>
+                <p><label><input type="radio" name="1q" value="3a" />Five</label></p>
+            
+                <p class="tittle">
+                    <b>2 - Which song was originally supposed to have an animated music video?</b>
+                </p>
+                <p><label><input type="radio" name="2q" value="4a" />Polly</label></p>
+                <p><label><input type="radio" name="2q" value="5a" />Lithium</label></p>
+                <p><label><input type="radio" name="2q" value="6a" />I Hate Myself and Want to Die</label></p>
+                <p class="tittle">
+                    <b>3 - What was Kurt Cobain's job after he dropped out of high school? </b>
+                </p>
+                <p><label><input type="radio" name="3q" value="7a" />Janitor</label></p>
+                <p><label><input type="radio" name="3q" value="8a" />Waiter</label></p>
+                <p><label><input type="radio" name="3q" value="9a" />Construction Worker</label></p>
+            
+                <p class="tittle">
+                    <b>4 - With which rock icon did Cobain publicly clash?</b>
+                </p>
+                <p><label><input type="radio" name="4q" value="10a" />Axl Rose</label></p>
+                <p><label><input type="radio" name="4q" value="11a" />George Harrison</label></p>
+                <p><label><input type="radio" name="4q" value="12a" />Nick Cave</label></p>
+            
+                <p class="tittle">
+                    <b>5 - Which major label first signed the band?</b>
+                </p>
+                <p><label><input type="radio" name="5q" value="13a" />DGC Records</label></p>
+                <p><label><input type="radio" name="5q" value="14a" />Sub Pop Records</label></p>
+                <p><label><input type="radio" name="5q" value="15a" />Sony Music</label></p>
+            
+                <p class="tittle">
+                    <b>6 - How much did the band spend to record its first album?</b>
+                </p>
+                <p><label><input type="radio" name="6q" value="16a" />$12,000</label></p>
+                <p><label><input type="radio" name="6q" value="17a" />$8,000</label></p>
+                <p><label><input type="radio" name="6q" value="18a" />$600</label></p>
+            
+                <p class="tittle">
+                    <b>7 - The video for "In Bloom" is set in which city?</b>
+                </p>
+                <p><label><input type="radio" name="7q" value="19a" />San Francisco</label></p>
+                <p><label><input type="radio" name="7q" value="20a" />Seattle</label></p>
+                <p><label><input type="radio" name="7q" value="21a" />New York</label></p>
+            
+                <p class="tittle">
+                    <b>8 - What other band name did Cobain consider before settling on Nirvana?</b>
+                </p>
+                <p><label><input type="radio" name="8q" value="22a" />Pen Cap Chew</label></p>
+                <p><label><input type="radio" name="8q" value="23a" />Happy Happy</label></p>
+                <p><label><input type="radio" name="8q" value="24a" />Aberdeen</label></p>
+            
+                <p class="tittle">
+                    <b>9 - As a child, family turmoil caused a judge to give custody of Cobain to whom?</b>
+                </p>
+                <p><label><input type="radio" name="9q" value="25a" />Cobain's father</label></p>
+                <p><label><input type="radio" name="9q" value="26a" />Cobain's mother</label></p>
+                <p><label><input type="radio" name="9q" value="27a" />Cobain's grandmother</label></p>
+            
+                <p class="tittle">
+                    <b>10 - What is the name of the band's first single?</b>
+                </p>
+                <p><label><input type="radio" name="10q" value="28a" />About a Girl</label></p>
+                <p><label><input type="radio" name="10q" value="29a" />Love Buzz</label></p>
+                <p><label><input type="radio" name="10q" value="30a" />Blew</label></p>
+
+                <p class="terms-conditions"><label>
+                        <input type="checkbox" name="terms-conditions" required/>
+                            I have read and agree to the Terms of Use and Privacy Policy.
+                    </label></p>
+
+                <p class="buttons"><input type="submit" value="Submit" id="submit"/>
+                                    <input type="reset" value="Reset" id="reset"/></p>
+            </section>
+        </form>
+        <p class="credit"></p>
+    </main>
+    <footer>
+        <a href="#top"><img src="images/top.jpg" alt="To Top" class="top"></a>
+        <a href="https://www.facebook.com/Nirvana" target="_blank"><img src="images/fb.png" alt="Facebook Logo" class="social" id="fb"></a>
+        <a href="https://twitter.com/Nirvana" target="_blank"><img src="images/tw.png" alt="Twitter Logo" class="social" id="tw"></a>
+        <a href="https://www.youtube.com/user/NirvanaVEVO" target="_blank"><img src="images/yt.png" alt="Youtube Logo" class="social" id="yt"></a>
+        <p>
+            &copy; Copyright 2019. All right reserved. Nirvana Fan Page.
+        </p>
+    </footer>
+</body>
+</html>

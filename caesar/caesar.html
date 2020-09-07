@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!--animations-->
+    <script type="text/javascript" src="caesar.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Caesar Cipher Tool</title>
+</head>
+
+<body>
+    <section id="banner">
+        <a href="caesar.html">
+            <img id="banner-img" class="animate__animated animate__bounce" src="images/caesar.jpg" alt="Caesar">
+        </a>
+    </section>
+
+    <section id="main">
+        <section id="box" class="animate__animated animate__zoomIn">
+            <section id="header">
+                <div id="buttons-wrapper">
+                    <div class="red-button"></div>
+                    <div class="yellow-button"></div>
+                    <div class="green-button"></div>
+                </div>
+                <div id="header-wrapper">
+                    <p id="terminal-header">Terminal - Caesar Cipher</p>
+                </div>
+            </section>
+            <section id="terminal-window">
+                <p id="form-header">> Caesar Cipher - Encryption & Decryption Tool</p>
+                <form>
+                    <section id="user-op">
+                        <label for="option"><span id="form-label">> Input [1] to encrypt or [2] to decrypt: </span></label>
+                        <span id="before-terminal">> <input type="number" id="user-option" name="choice" value="" autofocus></span>
+                    </section>
+
+                    <section id="user-actions1">
+                        <label for="text-to-encrypt"><span id="form-label1">> Input message to encrypt: </span></label>
+                        <span id="before-terminal">> <input type="text" id="entered-text" name="encrypt" value=""></span>
+                    </section>
+
+                    <section id="user-actions2">
+                        <label for="text-to-encrypt"><span id="form-label2">> Input the shift [0-26]: </span></label>
+                        <span id="before-terminal">> <input type="number" id="entered-shift" name="shift" value=""></span>
+                    </section>
+
+                    <section id="user-actions3">
+                        <label for="text-to-encrypt"><span id="form-label3">> Encrypted message: </span></label>
+                        <span id="before-terminal">> <input type="text" id="encoded-text" name="encrypted" value=""></span>
+                    </section>
+
+                    <section id="user-actions4">
+                        <label for="text-to-encrypt"><span id="form-label4">> Input [C] to clear: </span></label>
+                        <span id="before-terminal">> <input type="text" id="clear-text" name="clear" value=""></span>
+                    </section>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+<footer>
+    <button onclick="goUp()" class="top"><img src="images/top.jpg" alt="To Top" class="top"></button>
+    <p>
+        <img src="images/code.png" id="code" alt="Code"> by Pedro Monteiro &copy; 2020
+    </p>
+</footer>
+</html>

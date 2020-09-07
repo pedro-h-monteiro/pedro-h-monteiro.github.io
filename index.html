@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!--animations-->
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Pedro's Portfolio</title>
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <section id="banner">
+        <div id="wrapper">
+            <p>> Pedro Monteiro</p>
+        </div>
+    </section>
+
+    <section id="main">
+        <section id="box" class="animate__animated animate__zoomIn">
+            <section id="header">
+                <div class="red-button"></div>
+                <div class="yellow-button"></div>
+                <div class="green-button"></div>
+            </section>
+            <section id="terminal-window">
+                <p id="terminal-tittle">
+                    > Pedro.currentLocation
+                </p>
+                <p id="terminal-info">
+                    "Entroncamento, PT"
+                </p>
+                <p id="terminal-tittle">
+                    > Pedro.education
+                </p>
+                <p id="terminal-info">
+                    "CTeSP - Informática - ESTA - Escola Superior de Tecnologia de Abrantes"
+                </p>
+                <p id="terminal-tittle">
+                    > Pedro.contactInfo
+                </p>
+                <p id="terminal-info">
+                    ["<a href="mailto:pedro.h.monteiro@outlook.pt?&subject=Pedro's%20Portfolio" id="terminal-links">pedro.h.monteiro@outlook.pt</a>",
+                    "<a href="https://www.linkedin.com/in/pedro-monteiro-05940218a/" target="_blank"
+                        id="terminal-links">LinkedIn</a>",
+                    "<a href="https://github.com/pedro-h-monteiro" target="_blank" id="terminal-links">GitHub</a>"]
+                </p>
+
+                <p id="terminal-tittle">
+                    > Pedro.resume
+                </p>
+                <p id="terminal-info">
+                    "<a href="files/PedroMonteiro_Resume_09-2020.pdf" target="_blank" id="terminal-links">pedromonteiro.pdf</a>"
+                </p>
+
+                <p id="terminal-tittle">
+                    > Pedro.interests
+                </p>
+                <p id="terminal-info">
+                    ["Programming", "Basketball", "Gaming", "Music", "Challenges"]
+                </p>
+                <p id="terminal-tittle">
+                    > Pedro.skills
+                </p>
+                <p id="terminal-info">
+                    ["C", "Python", "JavaScript", "Node.js", "HTML", "CSS", "MySQL", "Networking", "Unreal Engine
+                    Blueprints", "Linux", "PC Hardware", "PC Building"]
+                </p>
+                <p id="terminal-tittle-last">
+                    > <img src="images/cursor2.jpg" id="terminal-cursor" alt="cursor">
+                </p>
+            </section>
+        </section>
+    </section>
+
+    <h2 id="projects">Projects</h2>
+
+    <article id="project-cards" class="animate__animated animate__zoomIn">
+        <img src="images/U51-3.png" id="projects-img2" alt="">
+        <div id="project-content">
+            <h3>Techframe Internship</h3>
+            <p id="projects-info">
+                I did a 4 month internship at <a href="http://www.techframeworld.com/" target="_blank">Techframe</a> in
+                which we were in the development
+                process of a FPS game called <a
+                    href="https://www.mediotejo.net/abrantes-techframe-aposta-nos-jogos-para-chegar-ao-mercado-internacional/"
+                    target="_blank">Universe 51 - Tanhäuser Wars</a>.
+                My role was to plan and develop the necessary systems for the online co-op multiplayer platform
+                in which the game is based upon. During this time, I developed a lot of functionalities and features for
+                that project, in which you can read a
+                more in-depth analysis about some of them below.
+            </p>
+            <div id="languages-wrapper">
+                <p id="languages">Unreal Engine Blueprints</p>
+            </div>
+            <p id="check-it">
+                <a href="universe51/universe51.html">Read More<img src="images/newtab.png" id="new-tab"
+                        alt="New Tab"></a>
+            </p>
+        </div>
+    </article>
+
+    <article id="project-cards" class="animate__animated animate__zoomIn">
+        <img src="images/nirvana-banner.png" id="projects-img2" alt="">
+        <div id="project-content">
+            <h3>Nirvana - A Brief History</h3>
+            <p id="projects-info">
+                A project I developed in college, a fully responsive website built from scratch. I decided to base it on
+                Nirvana, it shows a brief history
+                of every band member aswell as Kurt Cobain's last days. It also has their entire discography, a quiz and
+                a shop with a functional checkout form.
+            </p>
+            <div id="languages-wrapper">
+                <p id="languages">HTML5</p>
+                <p id="languages">CSS3</p>
+                <p id="languages">JavaScript</p>
+            </div>
+            <p id="live-demo">
+                <a href="nirvana/index.html" target="_blank">Live Demo <img src="images/newtab.png" id="new-tab"
+                        alt="New Tab"></a>
+            </p>
+        </div>
+    </article>
+
+    <article id="project-cards" class="animate__animated animate__zoomIn">
+        <div id="aurora-bg"></div>
+        <div id="project-content">
+            <h3>Aurora Dashboard</h3>
+            <p id="projects-info">
+                Aurora Dashboard was a project developed in an IoT class I took in college
+                which consists of monitoring an array of sensors conected to an Arduino Uno
+                and using two Raspberri Pi's, one being the server and the other one being the client,
+                and taking action based on the state of those sensors. The main goal was to mimic a Smart Home
+                system, using a temperature sensor, various led's representing lights and appliances and a buzzer,
+                for the alarm. It also has a weather forecast system, using the Open Weather Forecast API.
+                Non-Mobile-Friendly.
+            </p>
+            <div id="languages-wrapper">
+                <p id="languages">HTML5</p>
+                <p id="languages">CSS3</p>
+                <p id="languages">JavaScript</p>
+                <p id="languages">Node.js</p>
+                <p id="languages">C</p>
+            </div>
+            <p id="live-demo">
+                <a href="aurora/index.html" target="_blank">Live Demo <img src="images/newtab.png" id="new-tab"
+                        alt="New Tab"></a>
+            </p>
+        </div>
+    </article>
+
+    <article id="project-cards" class="animate__animated animate__zoomIn">
+        <img src="images/banner3.jpg" id="projects-img2" alt="">
+        <div id="project-content">
+            <h3>Caeser Cipher</h3>
+            <p id="projects-info">
+                The original project was developed in C and it consisted of reading the contents of a text file,
+                encrypting it with a numeric key
+                given by the user, using the Caesar Cipher and saving the result in a new text file, being also possible
+                to decrypt the content of this new file,
+                as long as the key used in its encryption is known. However I have decided to rewrite it using
+                JavaScript, it does not read from text files, instead
+                the user inputs the text he wants to encrypt or decrypt, along with the key of his choosing.
+            </p>
+            <div id="languages-wrapper">
+                <p id="languages">C</p>
+                <p id="languages">JavaScript</p>
+            </div>
+            <p id="check-it">
+                <a href="caesar/caesar.html" target="_blank">Live Demo <img src="images/newtab.png" id="new-tab"
+                        alt="New Tab"></a>
+                <a href="https://github.com/pedro-h-monteiro/CaesarCypher" target="_blank" id="link2">C Project <img
+                        src="images/github-logo.png" id="link2-icon" alt="New Tab"></a>
+            </p>
+        </div>
+    </article>
+
+    <article id="project-cards" class="animate__animated animate__zoomIn">
+        <img src="images/rpi-3.png" id="projects-img2" alt="">
+        <div id="project-content">
+            <h3>Raspberri Pi 4 Server</h3>
+            <p id="projects-info-first">
+                I've always wanted my own personal server, NAS and cloud storage solution so I decided to make this. It
+                consists
+                of a Raspberri Pi 4 2GB with two 2TB external HDD's acting as external storage. The CPU is overclocked
+                to 2.0GHz and it runs the following
+                services:
+                <p id="info-list">- <strong>Nextcloud</strong> - My own personal cloud storage service;</p>
+                <p id="info-list">- <strong>PiVPN</strong> - So I can access my home network from outside, no matter where I am;</p>
+                <p id="info-list">- <strong>WoL</strong> - So I can remotely turn on my desktop, useful when I'm not at home and need something from
+                it;</p>
+                <p id="info-list">- <strong>Pi-hole</strong> - For network wide Ad-blocking;</p>
+                <p id="info-list">- <strong>UFW</strong> - Firewall for the Pi;</p>
+                <p id="info-list">- <strong>Fail2ban</strong> - An extra layer of protection against brute-force attacks;</p>
+                <p id="info-list">- <strong>Grafana</strong> - In conjunction with <strong>InfluxDB</strong>, so I can monitor what's happening on my network and
+                with the Pi;</p>
+                <p id="info-list-last">- <strong>Plex Server</strong> - My own personal media server.</p>
+            </p>
+            <div id="languages-wrapper">
+                <p id="languages">InfluxDB</p>
+                <p id="languages">Grafana</p>
+                <p id="languages">PiVPN</p>
+                <p id="languages">Pi-hole</p>
+                <p id="languages">UFW</p>
+                <p id="languages">Fail2Ban</p>
+                <p id="languages">Nextcloud</p>
+                <p id="languages">Plex</p>
+            </div>
+        </div>
+    </article>
+
+    <article id="project-cards" class="animate__animated animate__zoomIn">
+        <img src="images/portfolio.jpg" id="projects-img2" alt="">
+        <div id="project-content">
+            <h3>Portfolio</h3>
+            <p id="projects-info">
+                This page! A fully responsive website built from scratch.
+            </p>
+            <div id="languages-wrapper">
+                <p id="languages">HTML5</p>
+                <p id="languages">CSS3</p>
+                <p id="languages">JavaScript</p>
+            </div>
+        </div>
+    </article>
+</body>
+<footer>
+    <button onclick="goUp()" class="top"><img src="images/top.jpg" alt="To Top" class="top"></button>
+    <p>
+        <img src="images/code.png" id="code" alt="Code"> by Pedro Monteiro &copy; 2020
+    </p>
+</footer>
+
+</html>

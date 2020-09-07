@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nirvana - Home</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="shopScript.js"></script>
+    <link rel="icon" href="images/icon1.png" type="image/x-icon"/>
+</head>
+<a name="top"></a>
+<body id="special">
+    <div class="top-bg">
+        <iframe
+            src="https://open.spotify.com/follow/1/?uri=spotify:artist:6olE6TJLqED3rqDCT0FyPh&size=detail&theme=light"
+            width="215" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"
+            allowtransparency="true">
+        </iframe>
+        <header>
+            <p class="banner-wrapper"><a href="index.html"><img src="images/nirvana-logo.png" alt="Nirvana Logo" class="banner"></a></p>
+            <p class="banner-tittle">A brief history</p>
+        </header>
+    </div>
+
+    <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer" >
+    <label for="burguer-wrap" class="hamburguer">
+        <p>&#9776;</p>
+    </label>
+
+    <nav>
+        <ul>
+            <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer" >
+            <label for="burguer-wrap" class="hamburguer">
+                <p>&#9932;</p>
+            </label>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="page1.html">Dave Grohl</a></li>
+            <li><a href="page2.html">Krist Novoselic</a></li>
+            <li><a href="page3.html">Kurt Cobain</a></li>
+            <li><a href="page4.html">The Band</a></li>
+            <li><a href="page5.html">The Final Days</a></li>
+            <li><a href="page7.html">Discography</a></li>
+            <li><a href="page6.html">Ultimate Quiz</a></li>
+            <li class="optional"><a href="page8.html">Shop</a></li>
+            <li>
+                <div class="shop-dropdown">
+                    <button onclick="dropShop()" class="dropbtn">Shop</button>
+                    <div id="shopDropdown" class="dropdownContent">
+                        <a href="page8-shirts.html">Shirts</a>
+                        <a href="page8-hoodies.html">Hoodies</a>
+                        <a href="page8-accessories.html">Accessories</a>
+                        <a href="page8-vinyls.html">Vinyls</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="home-video">
+            <video playsinline autoplay muted loop controls>
+                <source src="video/homevideo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <a href="#top"><img src="images/top.jpg" alt="To Top" class="top"></a>
+        <a href="https://www.facebook.com/Nirvana" target="_blank"><img src="images/fb.png" alt="Facebook Logo" class="social" id="fb"></a>
+        <a href="https://twitter.com/Nirvana" target="_blank"><img src="images/tw.png" alt="Twitter Logo" class="social" id="tw"></a>
+        <a href="https://www.youtube.com/user/NirvanaVEVO" target="_blank"><img src="images/yt.png" alt="Youtube Logo" class="social" id="yt"></a>
+        <p>
+            &copy; Copyright 2019. All right reserved. Nirvana Fan Page.
+        </p>
+    </footer>
+</body>
+</html>

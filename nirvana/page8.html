@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nirvana - Shop</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="FAQTabs.js"></script>
+    <link rel="icon" href="images/icon1.png" type="image/x-icon" />
+</head>
+
+<body>
+    <a name="top"></a>
+    <div class="top-bg">
+        <header>
+            <p class="banner-wrapper"><a href="index.html"><img src="images/nirvana-logo.png" alt="Nirvana Logo"
+                        class="banner"></a></p>
+            <p class="banner-tittle">A brief history</p>
+        </header>
+    </div>
+    <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer">
+    <label for="burguer-wrap" class="hamburguer">
+        <p>&#9776;</p>
+    </label>
+
+    <nav>
+        <ul>
+            <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer">
+            <label for="burguer-wrap" class="hamburguer">
+                <p>&#9932;</p>
+            </label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Dave Grohl</a></li>
+            <li><a href="page2.html">Krist Novoselic</a></li>
+            <li><a href="page3.html">Kurt Cobain</a></li>
+            <li><a href="page4.html">The Band</a></li>
+            <li><a href="page5.html">The Final Days</a></li>
+            <li><a href="page7.html">Discography</a></li>
+            <li><a href="page6.html">Ultimate Quiz</a></li>
+            <li class="optional"><a href="page8.html" class="active">Shop</a></li>
+            <li>
+                <div class="shop-dropdown">
+                    <button onclick="dropShop()" class="dropbtn" id="active">Shop</button>
+                    <div id="shopDropdown" class="dropdownContent">
+                        <a href="page8-shirts.html">Shirts</a>
+                        <a href="page8-hoodies.html">Hoodies</a>
+                        <a href="page8-accessories.html">Accessories</a>
+                        <a href="page8-vinyls.html">Vinyls</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main class="shop">
+        <h1>Nirvana Shop</h1>
+        <hr>
+        <div class="productsContainer">
+            <a href="page8-shirts.html">
+                <figure class="shop-products">
+                    <img src="shopImages/nirvana-shirt3.png" alt="Nirvana Shirt" class="shop-items">
+            </a>
+            <figcaption>
+                T-Shirts
+            </figcaption>
+            </figure>
+
+            <a href="page8-hoodies.html">
+                <figure class="shop-products">
+                    <img src="shopImages/nirvana-hoodie2.png" alt="Nirvana Hoodie" class="shop-items">
+            </a>
+            <figcaption>
+                Hoodies
+            </figcaption>
+            </figure>
+
+            <a href="page8-accessories.html">
+                <figure class="shop-products">
+                    <img src="shopImages/nirvana-mug.png" alt="Nirvana Mug" class="shop-access">
+            </a>
+            <figcaption>
+                Accessories
+            </figcaption>
+            </figure>
+
+            <a href="page8-vinyls.html">
+                <figure class="shop-products">
+                    <img src="shopImages/nirvana-vinyl.png" alt="Nirvana Vinyl" class="shop-vinyl">
+            </a>
+            <figcaption>
+                Vinyls
+            </figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <a href="#top"><img src="images/top.jpg" alt="To Top" class="top"></a>
+        <a href="https://www.facebook.com/Nirvana" target="_blank"><img src="images/fb.png" alt="Facebook Logo"
+                class="social" id="fb"></a>
+        <a href="https://twitter.com/Nirvana" target="_blank"><img src="images/tw.png" alt="Twitter Logo" class="social"
+                id="tw"></a>
+        <a href="https://www.youtube.com/user/NirvanaVEVO" target="_blank"><img src="images/yt.png" alt="Youtube Logo"
+                class="social" id="yt"></a>
+        <p>
+            &copy; Copyright 2019. All right reserved. Nirvana Fan Page.
+        </p>
+    </footer>
+</body>
+
+</html>

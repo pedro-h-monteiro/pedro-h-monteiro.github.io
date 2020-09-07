@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nirvana - T-Shirts</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="shopScript.js"></script>
+    <link rel="icon" href="images/icon1.png" type="image/x-icon" />
+</head>
+
+<body>
+    <a name="top"></a>
+    <div class="top-bg">
+        <header>
+            <p class="banner-wrapper"><a href="index.html"><img src="images/nirvana-logo.png" alt="Nirvana Logo"
+                        class="banner"></a></p>
+            <p class="banner-tittle">A brief history</p>
+        </header>
+    </div>
+    <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer">
+    <label for="burguer-wrap" class="hamburguer">
+        <p>&#9776;</p>
+    </label>
+
+    <nav>
+        <ul>
+            <input type="checkbox" id="burguer-wrap" class="burguer-wrap" name="hamburguer">
+            <label for="burguer-wrap" class="hamburguer">
+                <p>&#9932;</p>
+            </label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html">Dave Grohl</a></li>
+            <li><a href="page2.html">Krist Novoselic</a></li>
+            <li><a href="page3.html">Kurt Cobain</a></li>
+            <li><a href="page4.html">The Band</a></li>
+            <li><a href="page5.html">The Final Days</a></li>
+            <li><a href="page7.html">Discography</a></li>
+            <li><a href="page6.html">Ultimate Quiz</a></li>
+            <li class="optional"><a href="page8.html" class="active">Shop</a></li>
+            <li>
+                <div class="shop-dropdown">
+                    <button onclick="dropShop()" class="dropbtn" id="active">Shop</button>
+                    <div id="shopDropdown" class="dropdownContent">
+                        <a href="page8-shirts.html">Shirts</a>
+                        <a href="page8-hoodies.html">Hoodies</a>
+                        <a href="page8-accessories.html">Accessories</a>
+                        <a href="page8-vinyls.html">Vinyls</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="shop-bg">
+        <h1>Nirvana Shop - T-Shirts</h1>
+        <hr>
+        <div class="productsContainer">
+            <figure>
+                <img src="shopImages/nirvana-shirt3.png" alt="" class="shop-items">
+                <figcaption>
+                    <span id="itemName1">Nirvana In Utero Circle [Black]</span>
+                    <p>Size: 
+                        <select id="clotheSizes1" class="custom-select" onchange="clothesPriceFunc('1')">
+                            <option id="24.99" value="none">*</option>
+                            <option id="24.99" value="sXS">XS</option>
+                            <option id="24.99" value="sS">S</option>
+                            <option id="24.99" value="sM">M</option>
+                            <option id="24.99" value="sL">L</option>
+                            <option id="24.99" value="sXL">XL</option>
+                        </select>
+                    </p>
+                    <p id="price1" class="price">$ 24.99</p>
+                    <p><button onclick="openAdr()" type="button" id="myBtn" class="buyBtn">Buy</button></p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="shopImages/nirvana-shirt.png" alt="" class="shop-items">
+                <figcaption>
+                    <span id="itemName2">Nirvana Smiley [Black]</span>
+                    <p>Size: 
+                        <select id="clotheSizes2" class="custom-select" onchange="clothesPriceFunc('2')">
+                            <option id="24.99" value="none">*</option>
+                            <option id="24.99" value="sXS">XS</option>
+                            <option id="24.99" value="sS">S</option>
+                            <option id="24.99" value="sM">M</option>
+                            <option id="24.99" value="sL">L</option>
+                            <option id="24.99" value="sXL">XL</option>
+                        </select>
+                    </p>
+                    <p id="price2" class="price">$ 24.99</p>
+                    <p><button onclick="openAdr()" type="button" id="myBtn" class="buyBtn">Buy</button></p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="shopImages/nirvana-shirt4.png" alt="" class="shop-items">
+                <figcaption>
+                    <span id="itemName3">Nirvana Stage Jump [Black]</span>
+                    <p>Size: 
+                        <select id="clotheSizes3" class="custom-select" onchange="clothesPriceFunc('3')">
+                            <option id="24.99" value="none">*</option>
+                            <option id="24.99" value="sXS">XS</option>
+                            <option id="24.99" value="sS">S</option>
+                            <option id="24.99" value="sM">M</option>
+                            <option id="24.99" value="sL">L</option>
+                            <option id="24.99" value="sXL">XL</option>
+                        </select>
+                    </p>
+                    <p id="price3" class="price">$ 24.99</p>
+                    <p><button onclick="openAdr()" type="button" id="myBtn" class="buyBtn">Buy</button></p>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="shopImages/nirvana-shirt5.png" alt="" class="shop-items">
+                <figcaption>
+                    <span id="itemName4">Nirvana Sunglasses [Red]</span>
+                    <p>Size: 
+                        <select id="clotheSizes4" class="custom-select" onchange="clothesPriceFunc('4')">
+                            <option id="24.99" value="none">*</option>
+                            <option id="24.99" value="sXS">XS</option>
+                            <option id="24.99" value="sS">S</option>
+                            <option id="24.99" value="sM">M</option>
+                            <option id="24.99" value="sL">L</option>
+                            <option id="24.99" value="sXL">XL</option>
+                        </select>
+                    </p>
+                    <p id="price4" class="price">$ 24.99</p>
+                    <p><button onclick="openAdr()" type="button" id="myBtn" class="buyBtn">Buy</button></p>
+                </figcaption>
+            </figure>
+        </div>
+
+          <!--Checkout Form-->
+          <div id="myPopUp" class="popUp">
+            <div class="popUp-content">
+              <span class="close" onclick="closeAdr()">&times;</span>
+              <div class="popUp-header">
+                <h2>Nirvana Shop - Checkout</h2>
+              </div>
+
+                <div id="complete">
+                    <img src="images/check.svg" alt="Phurchase Complete" style="margin: 20px;">
+                    <h2 style='margin-bottom: 20px;'>Thank You!</h2>
+                    <p style='margin-bottom: 40px;'>Your payment was successeful and your order is complete.</p>
+                </div>
+
+              <div class="popUp-body">
+                <div class="cart" id="">
+                    <h3 class="popUpTittle">Your cart <span id="cartQ">0</span></h3>
+                    <p id="cartIName">Product name  <span id="itemPrice"></span> <span id="cartName"></span></p>
+                    <p id="cartI">Size <span id="cartSize"></span></p>
+                    <p id="cartI">Quantity <span id="cartQuant"></span></p>
+                    <p id="cartI">Total (USD) <span id="cartTotal"></span></p>
+                </div>
+
+                <div class="payment" id="">
+                    <h3 class="popUpTittle">Payment</h3>
+                    <div class="paym">
+                        <p><input id="pay1" type="radio" name="pay" value="p1"> Credit card</p>
+                        <p><input id="pay2" type="radio" name="pay" value="p2"> Debit card</p>
+                        <p><input id="pay3" type="radio" name="pay" value="p3"> PayPal</p>
+                        <span id="after-payment"></span>
+                    </div>
+
+                    <p>
+                        <label for="card-name">
+                            <span class="checkSpan">Name on card: </span>
+                            <input type="text" id="card-name" name="card-name" class="box1" placeholder=" " required/>
+                            <span id="after-card-name"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="card-number">
+                            <span class="checkSpan">Credit card number: </span>
+                            <input type="number" id="card-number" name="card-number" class="box1" placeholder=" " required/>
+                            <span id="after-card-number"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="card-exp">
+                            <span class="checkSpan">Expiration: </span>
+                            <input type="text" pattern="[0-9]*" id="card-exp" name="card-exp" class="box1" placeholder=" " required/>
+                            <span id="after-expiration"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="card-cvv">
+                            <span class="checkSpan">CVV: </span>
+                            <input type="number" id="card-cvv" name="card-cvv" class="box1" placeholder=" " required/>
+                            <span id="after-card-cvv"></span>
+                        </label>
+                    </p>
+                    
+                </div>
+
+                <form action="mailto:aluno80930@ipt.pt" class="checkoutForm" onsubmit="" enctype="text/plain" method="post">
+                    <h3 class="popUpTittle">Billing Address</h3>
+                    <p>
+                        <label for="f-name">
+                            <span class="checkSpan">First name: </span>
+                            <input type="text" id="fname" name="fname" class="box1" placeholder=" ex. John" required/>
+                            <span id="after-fname"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="l-name">
+                            <span class="checkSpan">Last name: </span>
+                            <input type="text" id="lname" name="lname" class="box1" placeholder=" ex. Doe" required/>
+                            <span id="after-lname"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="username">
+                            <span class="checkSpan">Username: </span>
+                            <input type="text" name="username" id="username" class="box1" placeholder=" Kurdt Cobain" required/>
+                            <span id="after-username"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="email">
+                            <span class="checkSpan">Email: </span>
+                            <input type="text" name="email" id="email" class="box1" placeholder=" example@something.com" required/>
+                            <span id="after-email"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="address">
+                            <span class="checkSpan">Address: </span>
+                            <input type="text" name="address" id="address" class="box1" placeholder=" 1234 Main St" required/>
+                            <span id="after-address"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="address2">
+                            <span class="checkSpan">Address 2 (Optional): </span>
+                            <input type="text" name="address2" id="address2" class="box1" placeholder=" Apartment" required/>
+                            <span id="after-address2"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="Country">
+                            <span class="checkSpan">Country: </span>
+                            <input type="text" name="country" id="country" class="box1" placeholder=" Portugal" required/>
+                            <span id="after-country"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="state">
+                            <span class="checkSpan">State: </span>
+                            <input type="text" name="state" id="state" class="box1" placeholder=" Lisboa" required/>
+                            <span id="after-state"></span>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="zipcode">
+                            <span class="checkSpan">Zip Code: </span>
+                            <input type="text" pattern="[0-9]*" name="zipcode" id="zipcode" class="box1" placeholder=" 1234-567" required/>
+                            <span id="after-zipcode"></span>
+                        </label>
+                    </p>
+                </form>
+
+              </div>
+              <div class="popUp-footer">
+                <p id="btns">
+                    <input type="submit" value="Proceed to checkout" id="submit" onclick="checkout()"/>
+                </p>
+              </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <a href="#top"><img src="images/top.jpg" alt="To Top" class="top"></a>
+        <a href="https://www.facebook.com/Nirvana" target="_blank"><img src="images/fb.png" alt="Facebook Logo"
+                class="social" id="fb"></a>
+        <a href="https://twitter.com/Nirvana" target="_blank"><img src="images/tw.png" alt="Twitter Logo" class="social"
+                id="tw"></a>
+        <a href="https://www.youtube.com/user/NirvanaVEVO" target="_blank"><img src="images/yt.png" alt="Youtube Logo"
+                class="social" id="yt"></a>
+        <p>
+            &copy; Copyright 2019. All right reserved. Nirvana Fan Page.
+        </p>
+    </footer>
+</body>
+
+</html>

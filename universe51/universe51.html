@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!--animations-->
+    <script type="text/javascript" src="universe51.js"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Pedro's Portfolio - Universe 51</title>
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+    
+    <section id="banner">
+        <a href="../index.html"><p id="back-button">&#10094;</p></a>
+        <a href="universe51.html">
+            <img id="banner-img" class="animate__animated animate__bounce" src="images/U51-3.png" alt="Universe 51 Logo">
+        </a>
+        
+    </section>
+
+    <article id="card-1" class="animate__animated animate__zoomIn">
+        <img src="images/U51-1.png" id="img-card" alt="">
+        <div id="card-content">
+            <h3>Save Game System</h3>
+            <p>
+                The save game system allows to save information belonging to each player, such as the avatar, the name
+                chosen when the game is launched for the first time and no save game file is detected, although it
+                allows
+                for changing it again later along with the avatar, the player status (ready or not ready), the player's
+                team
+                and the player's progression in the game, such as the current level and XP.
+            </p>
+        </div>
+    </article>
+
+    <article id="card">
+        <img src="images/U51-1.png" id="img-card" alt="">
+        <div id="card-content">
+            <h3>Levelling System</h3>
+            <p>
+                The levelling system allows the player to have an experience totally tailored to its accomplishments
+                throughout the game. The system has 20 possible levels where the player starts at level 1 and according
+                to
+                its progression in the game obtains experience points. Each level needs a diferent quantity of
+                experience points
+                to be completed and subsequently surpassed, when that happens the player levels up to the next level.
+            </p>
+
+            <div class="row" id="img-row">
+                <div class="column">
+                    <img src="images/ls-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" id="lb-imgs">
+                </div>
+                <div class="column">
+                    <img src="images/ls-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow" id="lb-imgs">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()"> &#9932;</span>
+                    <!--Levelling System-->
+                    <div class="mySlides">
+                        <img src="images/ls-1.png" id="open-img">
+                        <p id="caption">Levelling System - XP Bar</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/ls-2.png" id="open-img">
+                        <p id="caption">Levelling System - Main Menu</p>
+                    </div>
+                    <!--Chat System-->
+                    <div class="mySlides">
+                        <img src="images/cs-1.png" id="open-img">
+                        <p id="caption">Chat System - Typing Message</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/cs-2.png" id="open-img">
+                        <p id="caption">Chat System - Message Sent</p>
+                    </div>
+                    <!--Host Match-->
+                    <div class="mySlides">
+                        <img src="images/hm-1.png" id="open-img">
+                        <p id="caption">Host Match - Menu</p>
+                    </div>
+                    <!--Matchmaking-->
+                    <div class="mySlides">
+                        <img src="images/mm-1.png" id="open-img">
+                        <p id="caption">Matchmaking Menu - Normal</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/mm-2.png" id="open-img">
+                        <p id="caption">Matchmaking Menu - Searching</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/mm-3.png" id="open-img">
+                        <p id="caption">Matchmaking Menu - Match Found</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/mm-4.png" id="open-img">
+                        <p id="caption">Matchmaking Menu - No Session Found</p>
+                    </div>
+                    <!--Graphics Settings-->
+                    <div class="mySlides">
+                        <img src="images/gs-1.png" id="open-img">
+                        <p id="caption">Graphics Settings - Main Menu</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="images/gs-2.png" id="open-img">
+                        <p id="caption">Graphics Settings - In Game</p>
+                    </div>
+                    <!--High Striker-->
+                    <div class="mySlides">
+                        <iframe src="https://www.youtube.com/embed/NjYzPr8LDHU" frameborder="0" id="hs-video"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="card">
+        <img src="images/U51-1.png" id="img-card" alt="">
+        <div id="card-content">
+            <h3>Chat System</h3>
+            <p>
+                The chat system allows every player connected to the game server to comunicate with each other, using
+                the names
+                they have chosen for themselves.
+            </p>
+            <div class="row" id="img-row">
+                <div class="column">
+                    <img src="images/cs-1.png" onclick="openModal();currentSlide(3)" class="hover-shadow" id="lb-imgs">
+                </div>
+                <div class="column">
+                    <img src="images/cs-2.png" onclick="openModal();currentSlide(4)" class="hover-shadow" id="lb-imgs">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="card">
+        <img src="images/U51-1.png" id="img-card" alt="">
+        <div id="card-content">
+            <h3>Host Match</h3>
+            <p>
+                This functionality allows the player to host its own session/match where other players will be allowed
+                to join
+                through the Matchmaking menu. On this menu the player will be able to choose a name for its session,
+                choose
+                the maximum number of players that will be allowed to join, the game mode, which can be Online or Local
+                (LAN) and
+                choose the map's time of day.
+            </p>
+            <div class="row" id="img-row">
+                <div class="column">
+                    <img src="images/hm-1.png" onclick="openModal();currentSlide(5)" class="hover-shadow" id="lb-imgs">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="card">
+        <img src="images/U51-1.png" id="img-card" alt="">
+        <div id="card-content">
+            <h3>Matchmaking</h3>
+            <p>
+                This functionality allows players to join previously created sessions/matches. It allows the player to
+                search for 5 Vs 5 matches,
+                by clicking this options, the search will start and a countdown will display on screen as it happens,
+                and if the search was successful,
+                meaning that a match with the requisites was found (having in fact found an open match that is not
+                full), the player will be added to
+                that match, if the requisites are not matched and no session is found a message will appear on screen,
+                informing the player that no matches were found.
+            </p>
+            <div class="row" id="img-row">
+                <div class="column">
+                    <img src="images/mm-1.png" onclick="openModal();currentSlide(6)" class="hover-shadow" id="lb-imgs">
+                </div>
+                <div class="column">
+                    <img src="images/mm-2.png" onclick="openModal();currentSlide(7)" class="hover-shadow" id="lb-imgs">
+                </div>
+                <div class="column">
+                    <img src="images/mm-3.png" onclick="openModal();currentSlide(8)" class="hover-shadow" id="lb-imgs">
+                </div>
+                <div class="column">
+                    <img src="images/mm-4.png" onclick="openModal();currentSlide(9)" class="hover-shadow" id="lb-imgs">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="card">
+        <img src="images/U51-1.png" id="img-card" alt="">
+        <div id="card-content">
+            <h3>Graphics Settings</h3>
+            <p>
+                This functionaluty allows the player to change as he sees fit, and according to the machine he's using
+                to run the game,
+                various settings of the game, such as the resolution the game will run at (the maximum being the one
+                supported by the monitor itself), the game's brightness, the render distance, anti-aliasing,
+                post-processing, shadows and textures.
+                This is all done using commands for each setting and executing them on the game engine.
+            </p>
+            <div class="row" id="img-row">
+                <div class="column">
+                    <img src="images/gs-1.png" onclick="openModal();currentSlide(10)" class="hover-shadow" id="lb-imgs">
+                </div>
+                <div class="column">
+                    <img src="images/gs-2.png" onclick="openModal();currentSlide(11)" class="hover-shadow" id="lb-imgs">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="card">
+        <img src="images/U51-1.png" id="img-card" alt="">
+
+        <div id="card-content">
+            <h3>High Striker - Mini Game</h3>
+            <p>
+                This consists of a mini-game inside the game itself. It has three different difficulty levels, Easy,
+                Medium and Hard.
+                The player approaches the machine and a pop up will
+                appear, asking to "Press 'E' to Play" where after that the player will be prompted to choose a
+                difficulty and a vertical bar, mimicking an actual high striker machine will appear,
+                with four distinct zones,
+                Missed (Gray), Weak Hit (Red), Great (Yellow) and Amazing Hit (Green) where a pointer will constantly
+                move up and down,
+                at a speed that is determined by the difficulty choosen, where the player will have to click a button
+                and the pointer will stop at
+                a certain color, which will then be the players rating.
+            </p>
+            <div class="row" id="img-row">
+                <div class="column">
+                    <img src="images/hs-1.png" onclick="openModal();currentSlide(12)" class="hover-shadow" id="lb-imgs">
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+<footer>
+    <button onclick="goUp()" class="top"><img src="images/top.jpg" alt="To Top" class="top"></button>
+    <p>
+        <img src="images/code.png" id="code" alt="Code"> by Pedro Monteiro &copy; 2020
+    </p>
+</footer>
+
+</html>

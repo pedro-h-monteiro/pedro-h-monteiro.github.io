@@ -1,0 +1,413 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Aurora Dashboard - Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="aurora.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="icon" href="images/icons/icon1.png" type="image/x-icon"/>
+</head>
+<body>
+	<div class="top-bar"></div>
+	<div class="top-banner">
+		<header>
+			<h1 style="font-size: 50px">
+				Aurora Dashboard
+			</h1>
+			<p class="title"></p>
+		</header>
+	</div>
+
+	<div class="material-cards">
+		<div class="material-card-weather"></div>
+		<div class="icon-today"></div>
+
+		<h2 class="material-tittle" >
+			<span id="localW">Weather</span>
+			<span id="shortSumLocal"></span>
+			<span id="tempLocal"></span>
+		</h2>
+		<div class="material-links">
+			
+			<div id="weaInput">
+				<p id="weatherF">How's the weather today?</p>
+				<input id="cityInput" type="text" placeholder=" type a city">
+				<input type="submit" id="search" class="act-btns" value="" onclick="checkWeather();"></input>
+			</div>
+
+			<p id="error"></p>
+
+			<div id="localWeaInfo">
+				<p class="display-api">Max Temperature <span id="maxLocal"></span></p>
+
+				<p class="display-api">Min Temperature <span id="minLocal"></span></p>
+
+				<p class="display-api">Wind <span id="windLocal"></span></p>
+	
+				<p class="display-api">Humidity <span id="humLocal"></span></p>
+
+				<p class="display-api">Pressure <span id="pressLocal"></span></p>
+
+				<p class="display-api">Precipitation <span id="preciLocal"></span></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="material-cards">
+		<div class="material-card-weather-forec"></div>
+		<div class="icon-tomorrow"></div>
+		<h2 class="material-tittle">
+			Tomorrow 
+			<span id="shortSumLocal2"></span>
+			<span id="localW2"></span>
+			<span id="tempLocalForec"></span>
+		</h2>
+		<div class="material-links">
+
+			<p id="forecB">See the weather forecast for the desired location here!</p>
+
+			<div id="localWeaForec">
+				<p class="display-api">Max Temperature <span id="maxLocalForec"></span></p>
+
+				<p class="display-api">Min Temperature <span id="minLocalForec"></span></p>
+
+				<p class="display-api">Wind <span id="windLocalForec"></span></p>
+	
+				<p class="display-api">Humidity <span id="humLocalForec"></span></p>
+
+				<p class="display-api">Pressure <span id="pressLocalForec"></span></p>
+
+				<p class="display-api">Precipitation <span id="preciLocalForec"></span></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="material-cards">
+		<div class="material-card1"></div>
+		<img src="images/icons/activity.svg" class="material-icon" alt="Icon">
+
+		<span class="notiDot"></span>
+
+		<h2 class="material-tittle">
+			Notifications
+		</h2>
+		<div class="material-links">
+			<p id="noNoti">There are no new notifications</p>
+
+			<div class="notifications">
+				<p id="noti"></p>
+			</div>
+			<input type="submit" id="notiClr" class="clr-btn" value="" onclick="clrNotif();"></input>
+		</div>
+	</div>
+
+	<div class="material-cards-overview">
+		<div class="material-card-over"></div>
+		<img src="images/icons/monitor.svg" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Overview
+		</h2>
+		<div class="material-links-over">
+			<table id="sensorValues">
+				<tr>
+					<th>Sensor</th>
+					<th>State</th>
+				</tr>
+				<tr>
+					<td>Alarm</td>
+					<td id="buzzerstate">Disabled</td>
+				</tr>
+				<tr>
+					<td>Front Door</td>
+					<td id="ledFDState">Closed</td>
+				</tr>
+				<tr>
+					<td>Garage Door</td>
+					<td id="ledGDState">Closed</td>
+				</tr>
+				<tr>
+					<td>Living Room Lights</td>
+					<td id="ledLRState">Off</td>
+				</tr>
+				<tr>
+					<td>Bedroom Lights</td>
+					<td id="ledBState">Off</td>
+				</tr>
+				<tr>
+					<td>Kitchen Lights</td>
+					<td id="ledKState">Off</td>
+				</tr>
+				<tr>
+					<td>Patio Lights</td>
+					<td id="ledPState">Off</td>
+				</tr>
+				<tr>
+					<td>Front Porch Lights</td>
+					<td id="ledFPState">Off</td>
+				</tr>
+				<tr>
+					<td>Lights Intensity</td>
+					<td id="potvalue">60%</td>
+				</tr>
+				<tr>
+					<td>Temperature</td>
+					<td id="temp">18 ºC</td>
+				</tr>
+				<tr>
+					<td>Humidity</td>
+					<td id="hum">45 %</td>
+				</tr>
+				<tr>
+					<td>User Settings</td>
+					<td id="usersettings">N/A</td>
+				</tr>
+				<tr>
+					<td>Device ID</td>
+					<td id="token">Arduino-01</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="material-cards">
+		<div class="material-card-weather"></div>
+		<img src="images/icons/cpu.svg" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Sensor Readings
+		</h2>
+		<div class="material-links">
+
+			<p class="display-data">Room Temperature: <span id="temp3">18 ºC</span></p>
+			<div class="data-chart">
+				<p id="temp2"></p>
+			</div>
+	
+			<p class="display-data">Room Humidity: <span id="hum3">45%</span></p>
+			<div class="data-chart">
+				<p id="hum2"></p>
+			</div>
+
+			<p class="display-data">Lights Intensity: <span id="lights3">60%</span></p>
+			<div class="data-chart">
+				<p id="lights2"></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="material-cards">
+		<div class="material-security"></div>
+		<img src="images/icons/home.svg" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Secutiry System
+		</h2>
+		<div class="material-links">
+
+			<p>Alarm: </p>
+			<input type="submit" class="act-btns" value="On" onclick="fireAlarmEnable();"></input>
+			<input type="submit" class="act-btns" value="Off" onclick="fireAlarmDisable();"></input>
+
+			<p>Front Door: </p>
+			<input type="submit" class="act-btns2" value="Open" onclick="frontDoorOpen();"></input>
+			<input type="submit" class="act-btns2" value="Close" onclick="frontDoorClose();"></input>
+
+			<p>Garage Door: </p>
+			<input type="submit" class="act-btns2" value="Open" onclick="garageDoorOpen();"></input>
+			<input type="submit" class="act-btns2" value="Close" onclick="garageDoorClose();"></input>
+		</div>
+	</div>
+
+	<div class="material-cards">
+		<div class="material-interior"></div>
+		<img src="images/icons/interior.png" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Lights - Interior
+		</h2>
+
+		<div class="material-links">
+
+			<p>Living Room: </p>
+			<input type="submit" class="act-btns" value="On" onclick="lrOn();"></input>
+			<input type="submit" class="act-btns" value="Off" onclick="lrOff();"></input>
+
+			<p>Bedroom: </p>
+			<input type="submit" class="act-btns" value="On" onclick="brOn();"></input>
+			<input type="submit" class="act-btns" value="Off" onclick="brOff();"></input>
+
+			<p>Kitchen: </p>
+			<input type="submit" class="act-btns" value="On" onclick="ktOn();"></input>
+			<input type="submit" class="act-btns" value="Off" onclick="ktOff();"></input>
+		</div>
+	</div>
+
+	<div class="material-cards">
+		<div class="material-exterior"></div>
+		<img src="images/icons/exterior.png" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Lights - Exterior
+		</h2>
+		<div class="material-links">
+
+			<p>Patio: </p>
+			<input type="submit" class="act-btns" value="On" onclick="ptOn();"></input>
+			<input type="submit" class="act-btns" value="Off" onclick="ptOff();"></input>
+
+			<p>Front Porch: </p>
+			<input type="submit" class="act-btns" value="On" onclick="fpOn();"></input>
+			<input type="submit" class="act-btns" value="Off" onclick="fpOff();"></input>
+		</div>
+	</div>
+
+	<div class="material-card-settings">
+		<div class="material-card1"></div>
+		<img src="images/icons/settings.svg" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Settings
+		</h2>
+		<div class="material-links">
+
+			<p class="display-data">
+				<img src="images/icons/thermometer.svg" class="rpi-img" alt="Icon">
+				Maximum Temperature: </p>
+			<input id="settingsInput" type="text" placeholder=" set the max temperature">
+			<input type="submit" id="send1" class="act-btns" value="" onclick="userSettings();"></input>
+
+			<p class="display-data">
+				<img src="images/icons/arrow-down-circle2.svg" class="rpi-img" alt="Icon">	
+				Send: </p>
+			<input id="text_to_send" type="text" placeholder=" type a command"></input>
+			<input type="submit" id="send2" class="act-btns" value="" onclick="sendInputData();"></input>
+
+			<p class="display-data">
+				<img src="images/icons/arrow-up-circle2.svg" class="rpi-img" alt="Icon">	
+				Receive: </p>
+			<input id="text_to_recive" type="text" placeholder=" check the state"></input>
+			<input type="submit" id="send3" class="act-btns" value="" onclick="sendInputToRecive();"></input>
+
+			<p id="response"></p>
+
+			<input type="submit" id="notiClr" class="clr-btn2" value="" onclick="clrInputs();"></input>
+		</div>
+	</div>
+
+	<div class="material-cards-horiz">
+		<div class="material-interior"></div>
+		<img src="images/icons/send.svg" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Commands
+		</h2>
+
+		<div class="material-links">
+			<div class="sendTo">
+				<p class="send">
+					<img src="images/icons/arrow-down-circle2.svg" class="cmd-img" alt="Icon">
+					Send to Raspberry Pi
+				</p>
+				<p class="cmd"><strong>To enable the alarm </strong>- alarmon</p>
+				<p class="cmd"><strong>To disable the alarm </strong>- alarmoff</p>
+				<p class="cmd"><strong>To open the front door </strong>- openFD</p>
+				<p class="cmd"><strong>To close the front door </strong>- closeFD</p>
+			</div>
+			<div class="receiveFrom">
+				<p class="receive">
+					<img src="images/icons/arrow-up-circle2.svg" class="cmd-img" alt="Icon">
+					Receive from Raspberry Pi
+				</p>
+				<p class="cmd"><strong>To check the state of the alarm </strong>- alarm</p>
+				<p class="cmd"><strong>To check the temperature </strong>- temp</p>
+				<p class="cmd"><strong>To check the humidity </strong>- hum</p>
+				<p class="cmd"><strong>To check the intensity of the lights </strong>- lights</p>
+				<p class="cmd"><strong>To check the state of the front door </strong>- frontdoor</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="material-cards-rpi">
+		<div class="material-server-stats"></div>
+		<img src="images/icons/server.svg" class="material-icon" alt="Icon">
+		<h2 class="material-tittle">
+			Server - Status
+		</h2>
+		<p class="push"></p>
+		<h2 class="infoT">
+			<img src="images/icons/cpu-dark.svg" style="margin-right: 5px;" class="" alt="Icon">
+			CPU
+		</h2>
+
+		<div class="material-data">
+			<p class="display-data-rpi">Current Load: <span id="cpuLoad">65%</span></p>
+			<div class="data-chart-rpi">
+				<p id="cpu1"></p>
+			</div>
+			<p class="display-data-rpi">Average Load: <span id="cpuAvg">63%</span></p>
+			<div class="data-chart-rpi">
+				<p id="cpu2"></p>
+			</div>
+			<p class="display-data-rpi">Temperature: <span id="cpuTemp">65 ºC</span></p>
+			<div class="data-chart-rpi">
+				<p id="cpu3"></p>
+			</div>
+		</div>
+
+		<h2 class="infoT">
+			<img src="images/icons/hard-drive.svg" style="margin-right: 5px;" class="" alt="Icon">
+			RAM
+		</h2>
+
+		<div class="material-data">
+			<p class="display-data-rpi">Used: <span id="usedRAM">60%</span></p>
+			<div class="data-chart-rpi">
+				<p id="ram1"></p>
+			</div>
+			<p class="display-data-rpi">Free: <span id="freeRAM">40%</span></p>
+			<div class="data-chart-rpi">
+				<p id="ram2"></p>
+			</div>
+			<p class="display-data-rpi">Total: <span id="totalRAM">926MB</span></p>
+			<div class="data-chart-rpi">
+				<p id="ram3"></p>
+			</div>
+		</div>
+
+		<h2 class="infoT">
+			<img src="images/icons/wifi-dark.svg" style="margin-right: 5px;" class="" alt="Icon">
+			Network
+		</h2>
+
+		<div class="material-data-os">
+			<p class="display-data-os">Connected to: <span id="ssid">FON_ZON</span></p>
+
+			<p class="display-data-os">Connection Type: <span id="netType">Wired</span></p>
+			
+			<p class="display-data-os">Connection Speed: <span id="netSpeed">12.9 Mb/s</span></p>
+		
+			<p class="display-data-os">MTU: <span id="mtu">1500</span></p>
+			
+			<p class="display-data-os">IPv4: <span id="netIP4">192.168.1.80</span></p>
+
+			<p class="display-data-os">IPv6: <span id="netIP6">0:0:0:0:0:ffff:c0a8:150</span></p>
+		</div>
+
+		<h2 class="infoT">
+			<img src="images/icons/info.svg" style="margin-right: 5px;" class="" alt="Icon">
+			Server
+		</h2>
+
+		<div class="material-data-os">
+			<p class="display-data-os">Up Time: <span id="upTime">15 days</span></p>
+
+			<p class="display-data-os">Name: <span id="hostName">Aurora-Server</span></p>
+
+			<p class="display-data-os">Platform: <span id="ostype">Linux</span></p>
+
+			<p class="display-data-os">Distro: <span id="distro">Raspbian</span></p>
+
+			<p class="display-data-os">Release: <span id="release">2019-10-03</span></p>
+
+			<p class="display-data-os">Kernel: <span id="kernel">3.19</span></p>
+		</div>
+	</div>
+</body>
+<footer>
+	<p>Made by Pedro Monteiro &copy; 2019 - Not optimized for small screens</p>
+</footer>
