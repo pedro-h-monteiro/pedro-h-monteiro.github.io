@@ -618,7 +618,7 @@ footer > p {
         font-size: 35px;
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
-        animation: animated-text 1s steps(15, end) 1s 1 normal both, animated-cursor 900ms steps(15, end) infinite;
+        animation: animated-text 1s steps(12, end) 1s 1 normal both, animated-cursor 900ms steps(12, end) infinite;
     }
     
     /* text animation */
@@ -1115,7 +1115,7 @@ footer > p {
         font-size: 35px;
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
-        animation: animated-text 1s steps(15, end) 1s 1 normal both, animated-cursor 900ms steps(15, end) infinite;
+        animation: animated-text 1s steps(12, end) 1s 1 normal both, animated-cursor 900ms steps(12, end) infinite;
     }
     
     /* text animation */
@@ -1621,7 +1621,7 @@ footer > p {
         font-size: 30px;
         color: rgba(255, 255, 255, 1);
         margin-top: 100px;
-        animation: animated-text 1s steps(15, end) 1s 1 normal both, animated-cursor 900ms steps(15, end) infinite;
+        animation: animated-text 1s steps(12, end) 1s 1 normal both, animated-cursor 900ms steps(12, end) infinite;
     }
     
     /* text animation */
