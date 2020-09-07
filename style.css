@@ -96,7 +96,8 @@ body::-webkit-scrollbar {
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 670px;
+    display: block;
+    text-align: center;
 }
 
 #wrapper > p {
@@ -605,8 +606,8 @@ footer > p {
     #wrapper {
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
-        display: flex;
+        display: block;
+        text-align: center;
     }
     
     #wrapper > p {
@@ -1102,8 +1103,8 @@ footer > p {
     #wrapper {
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
-        display: flex;
+        display: block;
+        text-align: center;
     }
     
     #wrapper > p {
@@ -1608,8 +1609,8 @@ footer > p {
     #wrapper {
         margin-left: auto;
         margin-right: auto;
-        width: 75%;
-        display: flex;
+        display: block;
+        text-align: center;
     }
     
     #wrapper > p {
