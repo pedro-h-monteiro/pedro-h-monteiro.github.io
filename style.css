@@ -44,6 +44,7 @@ body::-webkit-scrollbar {
 }
 
 #banner {
+    text-align: center;
     padding: 200px;
     background-image: url("images/banner4.png");
     background-repeat: no-repeat;
@@ -118,7 +119,7 @@ body::-webkit-scrollbar {
       width: 0;
     }
     to {
-      width: 630px;
+      width: 650px;
     }
 }
 
@@ -555,6 +556,7 @@ footer > p {
     }
     
     #banner {
+        text-align: center;
         padding: 0px;
         background-image: url("images/banner4.png");
         background-repeat: no-repeat;
@@ -628,7 +630,7 @@ footer > p {
           width: 0;
         }
         to {
-          width: 630px;
+          width: 315px;
         }
     }
     
@@ -1052,6 +1054,7 @@ footer > p {
     }
     
     #banner {
+        text-align: center;
         padding: 0px;
         background-image: url("images/banner4.png");
         background-repeat: no-repeat;
@@ -1125,7 +1128,7 @@ footer > p {
           width: 0;
         }
         to {
-          width: 630px;
+          width: 315px;
         }
     }
     
@@ -1558,6 +1561,7 @@ footer > p {
     }
     
     #banner {
+        text-align: center;
         padding: 0px;
         background-image: url("images/banner4.png");
         background-repeat: no-repeat;
@@ -1631,7 +1635,7 @@ footer > p {
           width: 0;
         }
         to {
-          width: 630px;
+          width: 270px;
         }
     }
     
