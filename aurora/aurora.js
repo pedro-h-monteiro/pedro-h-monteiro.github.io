@@ -38,7 +38,7 @@ function checkWeather()
 
             var id = Object.values(locations)[i];
             
-            fetch('http://api.openweathermap.org/data/2.5/forecast?id=' + id + '&APPID=4f270ef56e942e50b5bb2c4fb3334886&units=metric')
+            fetch('https://api.openweathermap.org/data/2.5/forecast?id=' + id + '&APPID=4f270ef56e942e50b5bb2c4fb3334886&units=metric')
             .then(res => res.json())
             .then((json) =>
             {
