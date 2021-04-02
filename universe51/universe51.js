@@ -4,13 +4,10 @@ function goUp()
 }
 
 // Get the Year
-window.onload = function()
-{
-    var date = new Date();
-    var year = date.getFullYear();
-    document.getElementById("year").innerHTML = year;
-    console.log(year);
-};
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById("year").innerHTML = year;
+console.log(year);
 
 // ProgressBar Scroller
 window.onscroll = function(){progressBar()};
