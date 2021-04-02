@@ -232,3 +232,13 @@ function decode()
     console.log(final);
     document.getElementById("encoded-text").value = final;
 }
+
+// Get the Year
+window.addEventListener('load', 
+  function getYear()
+  {
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById("year").innerHTML = year;
+    console.log(year);
+  }, false);

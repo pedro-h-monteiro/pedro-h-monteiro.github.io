@@ -60,3 +60,13 @@ function showSlides(n)
 
     slides[slideIndex - 1].style.display = "block";
 }
+
+// Get the Year
+window.addEventListener('load', 
+  function getYear()
+  {
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById("year").innerHTML = year;
+    console.log(year);
+  }, false);
