@@ -3,6 +3,16 @@ function goUp()
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+// Get the Year
+window.addEventListener('load', 
+  function getYear()
+  {
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById("year").innerHTML = year;
+    console.log(year);
+  }, false);
+
 window.onload = function()
 {
     var userOption = document.getElementById("user-option");
@@ -232,13 +242,3 @@ function decode()
     console.log(final);
     document.getElementById("encoded-text").value = final;
 }
-
-// Get the Year
-window.addEventListener('load', 
-  function getYear()
-  {
-    var date = new Date();
-    var year = date.getFullYear();
-    document.getElementById("year").innerHTML = year;
-    console.log(year);
-  }, false);
