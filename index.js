@@ -4,7 +4,7 @@ function goUp()
 }
 
 // ProgressBar Scroller
-window.onscroll = function(){progressBar()};
+window.onscroll = function(){ progressBar() };
 
 function progressBar()
 {
@@ -13,3 +13,13 @@ function progressBar()
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+// Get the Year
+window.addEventListener('load', 
+  function getYear()
+  {
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById("year").innerHTML = year;
+    console.log(year);
+  }, false);
